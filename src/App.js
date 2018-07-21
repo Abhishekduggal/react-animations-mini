@@ -89,6 +89,8 @@ export default class App extends Component {
     return (
       <div className="app">
         <h1>to-dos</h1>
+        <p>Today is: {new Date().toLocaleDateString()}</p>
+        <p>Time is: {new Date().toTimeString().slice(0, 5)}</p>
         <div className="todos-wrap">
           <div className="right-arrow">></div>
           <div className="input-container">
